@@ -10,6 +10,7 @@ import SwiftUI
 
 struct HomeView: View {
     @Binding var showMenu: Bool
+    @State var showUpdate = false
     
     var body: some View {
         VStack {
@@ -17,15 +18,32 @@ struct HomeView: View {
                 Text("Watching").font(.system(size: 28, weight: .bold))
                 Spacer()
                 AvatarView(showMenu: $showMenu)
+                
+                Button(action: { self.showUpdate.toggle() }) {
+                    Image(systemName: "bell")
+                        .renderingMode(.original)
+                        .font(.system(size: 16, weight: .medium))
+                        .frame(width: 36, height: 36)
+                        .background(Color.white)
+                        .clipShape(Circle())
+                        .shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
+                        .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 10)
+                }.sheet(isPresented: $showUpdate) {
+                    UpdateList()
+                }
             }.padding(.horizontal)
                 .padding(.top, 30)
                 .padding(.leading, 14)
             
             // Horizontal Scroll
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 30){
-                    ForEach(0 ..< 3) { item in
-                        SectionView()
+                HStack(spacing: 0){
+                    ForEach(sectionData) { item in
+                        GeometryReader { geometry in
+                            SectionView(section: item)
+                                .rotation3DEffect(Angle(degrees: Double(geometry.frame(in: .global).minX - 30) / -10
+                                ), axis: (x: 0, y: 10, z: 0))
+                        }.frame(width: 275, height: 275)
                     }
                 }.padding(30).padding(.bottom, 30)
             }
@@ -42,28 +60,45 @@ struct HomeView_Previews: PreviewProvider {
 }
 
 struct SectionView: View {
+    let section: Section
+    
     var body: some View {
         VStack {
             HStack(alignment: .top) {
-                Text("Prototype designs in SwiftUI")
+                Text(section.title)
                     .font(.system(size: 24, weight: .bold))
                     .frame(width: 160, alignment: .leading)
                     .foregroundColor(.white)
                 Spacer()
                 Image("Logo1")
             }
-            Text("18 Sections".uppercased())
+            Text(section.text.uppercased())
                 .frame(maxWidth: .infinity, alignment: .leading).foregroundColor(.white)
-            Image("Card1")
+            section.image
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 210)
         }.padding(.top, 20)
             .padding(.horizontal, 20)
             .frame(width: 275, height: 275)
-            .background(Color("card1"))
+            .background(section.color)
             .cornerRadius(30)
-            .shadow(color: Color("card1")
+            .shadow(color: section.color
                 .opacity(0.5), radius: 20, x: 0, y: 20)
     }
 }
+
+struct Section: Identifiable {
+    let id = UUID()
+    let title: String
+    let text: String
+    let logo: String
+    var image: Image
+    var color: Color
+}
+
+let sectionData = [
+    Section(title: "Prototype designs in SwiftUI", text: "18 Sections", logo: "Logo1", image: Image("Card1"), color: Color("card1")),
+    Section(title: "Prototype designs in SwiftUI", text: "18 Sections", logo: "Logo2", image: Image("Card2"), color: Color("card2")),
+    Section(title: "Prototype designs in SwiftUI", text: "18 Sections", logo: "Logo3", image: Image("Card3"), color: Color("card3"))
+]
