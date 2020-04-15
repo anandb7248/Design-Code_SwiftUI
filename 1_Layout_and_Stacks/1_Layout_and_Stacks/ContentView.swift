@@ -14,6 +14,7 @@ struct ContentView: View {
     @State var showCard = false
     @State var bottomState = CGSize.zero
     @State var showFullCard = false
+    @State var showProgress = false
     
     var body: some View {
         ZStack {
@@ -76,7 +77,7 @@ struct ContentView: View {
                 })
             )
             
-            BottomCardView()
+            BottomCardView(show: $showCard)
                 .offset(x: 0, y: showCard ? 360: 1000)
                 .offset(y: bottomState.height)
                 .blur(radius: show ? 20 : 0)
@@ -156,6 +157,8 @@ struct TitleView: View {
 }
 
 struct BottomCardView: View {
+    @Binding var show: Bool
+    
     var body: some View {
         VStack(spacing: 20) {
             Rectangle()
@@ -166,8 +169,24 @@ struct BottomCardView: View {
                 .multilineTextAlignment(.center)
                 .font(.subheadline)
                 .lineSpacing(4)
+            
+            HStack(spacing: 20.0) {
+                RingView(color1: #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), color2: #colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1), width: 88, height: 88, percent: 78, show: $show)
+                    .animation(Animation.easeInOut.delay(0.4))
+                
+                VStack(alignment: .leading, spacing: 8.0) {
+                    Text("SwiftUI").fontWeight(.bold)
+                    Text("12 of 12 sections completed\n10 hours spent so far").font(.footnote).foregroundColor(.gray)
+                    .lineSpacing(4)
+                }.padding(20)
+                    .background(Color.white)
+                .cornerRadius(20)
+                    .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 10)
+            }
+            
             Spacer()
-        }.padding()
+        }
+        .padding()
             .frame(maxWidth: .infinity)
             .background(Color.white)
             .cornerRadius(30)
