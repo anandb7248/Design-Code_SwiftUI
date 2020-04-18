@@ -179,7 +179,7 @@ struct BottomCardView: View {
                     Text("12 of 12 sections completed\n10 hours spent so far").font(.footnote).foregroundColor(.gray)
                     .lineSpacing(4)
                 }.padding(20)
-                    .background(Color.white)
+                    .background(Color("background3"))
                 .cornerRadius(20)
                     .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 10)
             }
@@ -188,7 +188,7 @@ struct BottomCardView: View {
         }
         .padding()
             .frame(maxWidth: .infinity)
-            .background(Color.white)
+        .background(BlurView(style: .systemUltraThinMaterial))
             .cornerRadius(30)
             .shadow(radius: 20)
     }

@@ -25,10 +25,11 @@ struct HomeView: View {
                     
                     Button(action: { self.showUpdate.toggle() }) {
                         Image(systemName: "bell")
-                            .renderingMode(.original)
+                            //.renderingMode(.original)
+                            .foregroundColor(.primary)
                             .font(.system(size: 16, weight: .medium))
                             .frame(width: 36, height: 36)
-                            .background(Color.white)
+                            .background(Color("backgroud3"))
                             .clipShape(Circle())
                             .shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
                             .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 10)
@@ -75,6 +76,7 @@ struct HomeView: View {
                 
                 Spacer()
             }
+            .frame(width: screen.width)
         }
     }
 }
@@ -147,7 +149,7 @@ struct WatchRingsView: View {
                 }
                 
             }.padding(8)
-                .background(Color.white)
+                .background(Color("background3"))
                 .cornerRadius(20)
                 .modifier(ShadowModifier())
             
@@ -155,7 +157,7 @@ struct WatchRingsView: View {
                 RingView(color1: #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1), color2: #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1), width: 32, height: 32, percent: 50, show: .constant(true))
                     .animation(Animation.easeInOut.delay(0.4))
             }.padding(8)
-                .background(Color.white)
+                .background(Color("background3"))
                 .cornerRadius(20)
                 .modifier(ShadowModifier())
             
@@ -163,7 +165,7 @@ struct WatchRingsView: View {
                 RingView(color1: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), color2: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1), width: 32, height: 32, percent: 66, show: .constant(true))
                     .animation(Animation.easeInOut.delay(0.4))
             }.padding(8)
-                .background(Color.white)
+                .background(Color("background3"))
                 .cornerRadius(20)
                 .modifier(ShadowModifier())
         }

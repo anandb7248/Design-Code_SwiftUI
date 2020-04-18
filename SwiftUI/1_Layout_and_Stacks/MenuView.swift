@@ -31,7 +31,7 @@ struct MenuView: View {
                 InfoView(iconName: "person.crop.circle", label: "Sign out")
             }.frame(maxWidth: .infinity)
                 .frame(height: 300)
-                .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))]), startPoint: .top, endPoint: .bottom))
+                .background(BlurView(style: .systemMaterial))
                 .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
                 .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
                 .padding().overlay(
