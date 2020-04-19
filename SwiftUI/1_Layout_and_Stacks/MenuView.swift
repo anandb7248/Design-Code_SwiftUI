@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct MenuView: View {
+    @EnvironmentObject var user: UserStore
+    @Binding var showProfile: Bool
+    
     var body: some View {
         VStack {
             Spacer()
@@ -29,6 +32,11 @@ struct MenuView: View {
                 InfoView(iconName: "gear", label: "Account")
                 InfoView(iconName: "creditcard", label: "Billing")
                 InfoView(iconName: "person.crop.circle", label: "Sign out")
+                    .onTapGesture {
+                        self.showProfile = false
+                        self.user.isLogged = false
+                        UserDefaults.standard.set(false, forKey: "isLogged")
+                }
             }.frame(maxWidth: .infinity)
                 .frame(height: 300)
                 .background(BlurView(style: .systemMaterial))
@@ -48,7 +56,7 @@ struct MenuView: View {
 
 struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuView()
+        MenuView(showProfile: .constant(true))
     }
 }
 

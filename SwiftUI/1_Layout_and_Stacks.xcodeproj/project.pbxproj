@@ -19,11 +19,14 @@
 		15386A262441632F0034BEF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15386A252441632F0034BEF8 /* Assets.xcassets */; };
 		15386A292441632F0034BEF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15386A282441632F0034BEF8 /* Preview Assets.xcassets */; };
 		15386A2C2441632F0034BEF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15386A2A2441632F0034BEF8 /* LaunchScreen.storyboard */; };
+		157B5461244CD885001E44BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 157B5460244CD885001E44BD /* GoogleService-Info.plist */; };
 		157C189F24451C3C00C6771E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157C189E24451C3C00C6771E /* MenuView.swift */; };
 		157C18A12445281900C6771E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157C18A02445281900C6771E /* Home.swift */; };
 		157C18A324453D7500C6771E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157C18A224453D7500C6771E /* HomeView.swift */; };
 		15A163F0244B563700F6D1CF /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 15A163EF244B563700F6D1CF /* SDWebImageSwiftUI */; };
 		15A163F2244B5A4600F6D1CF /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A163F1244B5A4600F6D1CF /* BlurView.swift */; };
+		15A163F4244B6F6A00F6D1CF /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A163F3244B6F6A00F6D1CF /* Buttons.swift */; };
+		15A163F6244B969D00F6D1CF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A163F5244B969D00F6D1CF /* LoginView.swift */; };
 		15AD728324478F7900BEF23E /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD728224478F7900BEF23E /* Modifiers.swift */; };
 		15AD72852447932D00BEF23E /* Roboto in Resources */ = {isa = PBXBuildFile; fileRef = 15AD72842447932D00BEF23E /* Roboto */; };
 		15AD72872447D6A200BEF23E /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD72862447D6A200BEF23E /* CourseList.swift */; };
@@ -32,6 +35,14 @@
 		15BEDC7F24462FEF00FBC96B /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEDC7E24462FEF00FBC96B /* UpdateStore.swift */; };
 		15BEDC8124463C6100FBC96B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEDC8024463C6100FBC96B /* TabBar.swift */; };
 		15BEDC83244641D400FBC96B /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEDC82244641D400FBC96B /* RingView.swift */; };
+		15D0E4EB244BBE350064A2B5 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 15D0E4EA244BBE350064A2B5 /* Lottie */; };
+		15D0E4ED244BBE700064A2B5 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0E4EC244BBE700064A2B5 /* LottieView.swift */; };
+		15D0E4EF244BC0820064A2B5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0E4EE244BC0820064A2B5 /* LoadingView.swift */; };
+		15D0E4F3244BC31F0064A2B5 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 15D0E4F1244BC31F0064A2B5 /* loading.json */; };
+		15D0E4F4244BC31F0064A2B5 /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 15D0E4F2244BC31F0064A2B5 /* success.json */; };
+		15D0E4F6244BC5960064A2B5 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0E4F5244BC5960064A2B5 /* SuccessView.swift */; };
+		15FF00E0244CE06000D690FC /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF00DF244CE06000D690FC /* UserStore.swift */; };
+		2A1FA1FCFE6C668255E8CFB5 /* Pods_1_Layout_and_Stacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5567B9588C1159E05FA9BAC /* Pods_1_Layout_and_Stacks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,10 +59,13 @@
 		15386A282441632F0034BEF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		15386A2B2441632F0034BEF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15386A2D2441632F0034BEF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		157B5460244CD885001E44BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		157C189E24451C3C00C6771E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		157C18A02445281900C6771E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		157C18A224453D7500C6771E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		15A163F1244B5A4600F6D1CF /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		15A163F3244B6F6A00F6D1CF /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		15A163F5244B969D00F6D1CF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		15AD728224478F7900BEF23E /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		15AD72842447932D00BEF23E /* Roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Roboto; sourceTree = "<group>"; };
 		15AD72862447D6A200BEF23E /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
@@ -60,6 +74,15 @@
 		15BEDC7E24462FEF00FBC96B /* UpdateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStore.swift; sourceTree = "<group>"; };
 		15BEDC8024463C6100FBC96B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		15BEDC82244641D400FBC96B /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
+		15D0E4EC244BBE700064A2B5 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		15D0E4EE244BC0820064A2B5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		15D0E4F1244BC31F0064A2B5 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		15D0E4F2244BC31F0064A2B5 /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
+		15D0E4F5244BC5960064A2B5 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		15FF00DF244CE06000D690FC /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		81DA78E627E00EF2E6727E53 /* Pods-1_Layout_and_Stacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1_Layout_and_Stacks.release.xcconfig"; path = "Target Support Files/Pods-1_Layout_and_Stacks/Pods-1_Layout_and_Stacks.release.xcconfig"; sourceTree = "<group>"; };
+		D4EE4B035AA14C840807967E /* Pods-1_Layout_and_Stacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1_Layout_and_Stacks.debug.xcconfig"; path = "Target Support Files/Pods-1_Layout_and_Stacks/Pods-1_Layout_and_Stacks.debug.xcconfig"; sourceTree = "<group>"; };
+		F5567B9588C1159E05FA9BAC /* Pods_1_Layout_and_Stacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_1_Layout_and_Stacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +92,8 @@
 			files = (
 				15A163F0244B563700F6D1CF /* SDWebImageSwiftUI in Frameworks */,
 				1520266A244A507B0094AE4F /* Contentful in Frameworks */,
+				15D0E4EB244BBE350064A2B5 /* Lottie in Frameworks */,
+				2A1FA1FCFE6C668255E8CFB5 /* Pods_1_Layout_and_Stacks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +105,8 @@
 			children = (
 				15386A1E2441632A0034BEF8 /* 1_Layout_and_Stacks */,
 				15386A1D2441632A0034BEF8 /* Products */,
+				D6AF5AB80714FBB3031041CF /* Pods */,
+				546B5674A3D6F6F1810A661B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,10 +125,17 @@
 				15386A212441632A0034BEF8 /* SceneDelegate.swift */,
 				15386A232441632A0034BEF8 /* ContentView.swift */,
 				157C18A02445281900C6771E /* Home.swift */,
+				157C18A224453D7500C6771E /* HomeView.swift */,
+				15A163F5244B969D00F6D1CF /* LoginView.swift */,
+				15FF00DF244CE06000D690FC /* UserStore.swift */,
 				15BEDC82244641D400FBC96B /* RingView.swift */,
 				15AD728224478F7900BEF23E /* Modifiers.swift */,
 				15BEDC8024463C6100FBC96B /* TabBar.swift */,
 				15A163F1244B5A4600F6D1CF /* BlurView.swift */,
+				15D0E4EC244BBE700064A2B5 /* LottieView.swift */,
+				15D0E4EE244BC0820064A2B5 /* LoadingView.swift */,
+				15D0E4F5244BC5960064A2B5 /* SuccessView.swift */,
+				15A163F3244B6F6A00F6D1CF /* Buttons.swift */,
 				15BEDC7A2445FFF300FBC96B /* UpdateList.swift */,
 				15AD72862447D6A200BEF23E /* CourseList.swift */,
 				1520266B244A52470094AE4F /* CourseStore.swift */,
@@ -111,12 +145,13 @@
 				15202662244A46C00094AE4F /* Data.swift */,
 				15202666244A4E0D0094AE4F /* DataStore.swift */,
 				15202664244A48660094AE4F /* PostList.swift */,
-				157C18A224453D7500C6771E /* HomeView.swift */,
 				157C189E24451C3C00C6771E /* MenuView.swift */,
 				15386A252441632F0034BEF8 /* Assets.xcassets */,
+				15D0E4F0244BC31F0064A2B5 /* Lottie */,
 				15AD72842447932D00BEF23E /* Roboto */,
 				15386A2A2441632F0034BEF8 /* LaunchScreen.storyboard */,
 				15386A2D2441632F0034BEF8 /* Info.plist */,
+				157B5460244CD885001E44BD /* GoogleService-Info.plist */,
 				15386A272441632F0034BEF8 /* Preview Content */,
 			);
 			path = 1_Layout_and_Stacks;
@@ -130,6 +165,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		15D0E4F0244BC31F0064A2B5 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				15D0E4F1244BC31F0064A2B5 /* loading.json */,
+				15D0E4F2244BC31F0064A2B5 /* success.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		546B5674A3D6F6F1810A661B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5567B9588C1159E05FA9BAC /* Pods_1_Layout_and_Stacks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6AF5AB80714FBB3031041CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4EE4B035AA14C840807967E /* Pods-1_Layout_and_Stacks.debug.xcconfig */,
+				81DA78E627E00EF2E6727E53 /* Pods-1_Layout_and_Stacks.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15386A302441632F0034BEF8 /* Build configuration list for PBXNativeTarget "1_Layout_and_Stacks" */;
 			buildPhases = (
+				F5FF3B32796AE54C83953FF2 /* [CP] Check Pods Manifest.lock */,
 				15386A182441632A0034BEF8 /* Sources */,
 				15386A192441632A0034BEF8 /* Frameworks */,
 				15386A1A2441632A0034BEF8 /* Resources */,
+				C43DFF37D7934A05BB75EF7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +212,7 @@
 			packageProductDependencies = (
 				15202669244A507B0094AE4F /* Contentful */,
 				15A163EF244B563700F6D1CF /* SDWebImageSwiftUI */,
+				15D0E4EA244BBE350064A2B5 /* Lottie */,
 			);
 			productName = 1_Layout_and_Stacks;
 			productReference = 15386A1C2441632A0034BEF8 /* 1_Layout_and_Stacks.app */;
@@ -181,6 +245,7 @@
 			packageReferences = (
 				15202668244A507B0094AE4F /* XCRemoteSwiftPackageReference "contentful.swift" */,
 				15A163EE244B563700F6D1CF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				15D0E4E9244BBE350064A2B5 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 15386A1D2441632A0034BEF8 /* Products */;
 			projectDirPath = "";
@@ -200,10 +265,55 @@
 				15386A292441632F0034BEF8 /* Preview Assets.xcassets in Resources */,
 				15386A262441632F0034BEF8 /* Assets.xcassets in Resources */,
 				15AD72852447932D00BEF23E /* Roboto in Resources */,
+				15D0E4F3244BC31F0064A2B5 /* loading.json in Resources */,
+				15D0E4F4244BC31F0064A2B5 /* success.json in Resources */,
+				157B5461244CD885001E44BD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C43DFF37D7934A05BB75EF7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-1_Layout_and_Stacks/Pods-1_Layout_and_Stacks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-1_Layout_and_Stacks/Pods-1_Layout_and_Stacks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-1_Layout_and_Stacks/Pods-1_Layout_and_Stacks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5FF3B32796AE54C83953FF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-1_Layout_and_Stacks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		15386A182441632A0034BEF8 /* Sources */ = {
@@ -219,16 +329,22 @@
 				157C189F24451C3C00C6771E /* MenuView.swift in Sources */,
 				15AD728324478F7900BEF23E /* Modifiers.swift in Sources */,
 				15BEDC7D244603BB00FBC96B /* UpdateDetail.swift in Sources */,
+				15D0E4ED244BBE700064A2B5 /* LottieView.swift in Sources */,
 				15BEDC83244641D400FBC96B /* RingView.swift in Sources */,
 				157C18A12445281900C6771E /* Home.swift in Sources */,
 				157C18A324453D7500C6771E /* HomeView.swift in Sources */,
 				15386A222441632A0034BEF8 /* SceneDelegate.swift in Sources */,
 				15202665244A48660094AE4F /* PostList.swift in Sources */,
 				15386A242441632A0034BEF8 /* ContentView.swift in Sources */,
+				15FF00E0244CE06000D690FC /* UserStore.swift in Sources */,
+				15D0E4F6244BC5960064A2B5 /* SuccessView.swift in Sources */,
+				15A163F6244B969D00F6D1CF /* LoginView.swift in Sources */,
+				15A163F4244B6F6A00F6D1CF /* Buttons.swift in Sources */,
 				15202661244A3FD70094AE4F /* CourseDetail.swift in Sources */,
 				15A163F2244B5A4600F6D1CF /* BlurView.swift in Sources */,
 				15BEDC8124463C6100FBC96B /* TabBar.swift in Sources */,
 				15AD72872447D6A200BEF23E /* CourseList.swift in Sources */,
+				15D0E4EF244BC0820064A2B5 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,9 +478,11 @@
 		};
 		15386A312441632F0034BEF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4EE4B035AA14C840807967E /* Pods-1_Layout_and_Stacks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"1_Layout_and_Stacks/Preview Content\"";
 				DEVELOPMENT_TEAM = 85RCG4JCT7;
 				ENABLE_PREVIEWS = YES;
@@ -382,9 +500,11 @@
 		};
 		15386A322441632F0034BEF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81DA78E627E00EF2E6727E53 /* Pods-1_Layout_and_Stacks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"1_Layout_and_Stacks/Preview Content\"";
 				DEVELOPMENT_TEAM = 85RCG4JCT7;
 				ENABLE_PREVIEWS = YES;
@@ -440,6 +560,14 @@
 				minimumVersion = 1.3.3;
 			};
 		};
+		15D0E4E9244BBE350064A2B5 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -452,6 +580,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 15A163EE244B563700F6D1CF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		15D0E4EA244BBE350064A2B5 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15D0E4E9244BBE350064A2B5 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
